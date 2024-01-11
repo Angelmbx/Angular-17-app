@@ -1,0 +1,8 @@
+<section>
+@if (isLoggedIn) {
+<p>Bienvenido, {{ username }}</p>
+} @else {
+<p>Inicia sesión</p>
+}
+<games-component></games-component>
+</section>

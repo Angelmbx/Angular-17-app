@@ -1,0 +1,6 @@
+section {
+    max-width: 500px;
+    margin: 0 auto; /* centrar */
+    padding-top: 30px;
+    font-size: 25px;
+}
