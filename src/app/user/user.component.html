@@ -1,8 +1,13 @@
 <section>
 @if (isLoggedIn) {
 <p>Bienvenido, {{ username }}</p>
+<img 
+(click)="greet()"
+alt="photo" 
+src="https://github.com/Angelmbx.png"/>
 } @else {
 <p>Inicia sesión</p>
+<button (click)="isLoggedIn = true" >Log In</button>
 }
-<games-component></games-component>
+<games-component [username]="username" [isLoggedIn]="isLoggedIn"></games-component>
 </section>

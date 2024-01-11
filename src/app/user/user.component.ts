@@ -12,4 +12,9 @@ import { GamesComponent } from '../games/games.component';
 export class UserComponent {
   username = 'nucos';
   isLoggedIn = false;
+
+  greet(){
+    alert('Hola!!')
+    }
+
 }
