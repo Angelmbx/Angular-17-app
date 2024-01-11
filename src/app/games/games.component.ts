@@ -15,12 +15,24 @@ import { Component, Input } from '@angular/core';
     </ul>
     </div>
   `,
-  styles: ``
+  styles: `
+ 
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block; 
+  }
+
+  li {
+    margin: 5px; 
+  }
+`
 })
 export class GamesComponent {
   @Input() username = '';
   @Input() isLoggedIn = false;
-  
+
   games = [
     {
       id: 1,

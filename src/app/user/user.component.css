@@ -1,19 +1,27 @@
 section {
-    max-width: 500px;
-    margin: 0 auto; /* centrar */
-    padding-top: 30px;
-    font-size: 25px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  height: 100vh; /* Esto centra la sección verticalmente en toda la altura de la ventana */
 }
 
-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+/* Estilos adicionales para ajustar el diseño según sea necesario */
+section p {
+  font-size: 18px;
 }
 
-button {
-  margin-left: 10px;
+section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+section button {
+  margin-top: 10px;
   width: 120px;
   height: 30px;
 }
+
+
+
