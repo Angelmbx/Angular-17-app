@@ -1,6 +1,8 @@
-<router-outlet
-  ><h1>
-   User recent games - {{ city.toUpperCase() }} , {{ 2000 + 24 }}
-  </h1>
+<router-outlet>
+  <div>
+    <h1>Play Trace - gaming history</h1>
+    <img alt="title-logo" src="../assets/icons/logo-icon.png" />
+  </div>
+  <h6>Based in {{ city.toUpperCase() }} , {{ 2000 + 24 }}</h6>
   <user-component></user-component>
 </router-outlet>
