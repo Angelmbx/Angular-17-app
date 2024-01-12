@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   imports: [CommonModule, GamesComponent],
   template: `
     <div *ngIf="isLoggedIn">
-    <h3>Últimos juegos jugados por {{ username }}</h3>
+    <h3>Últimos juegos jugados por <span>{{ username }}</span></h3>
     <ul>
     @for(game of games; track game.id) {
       <li> {{ game.name }} </li>
@@ -26,6 +26,10 @@ import { Component, Input } from '@angular/core';
 
   li {
     margin: 5px; 
+  }
+
+  span {
+    color:burlywood;
   }
 `
 })
