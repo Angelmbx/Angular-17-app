@@ -1,17 +1,35 @@
-section {
+.ax {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  height: 100vh; /* Esto centra la sección verticalmente en toda la altura de la ventana */
+  height: 100vh; 
 }
 
-/* Estilos adicionales para ajustar el diseño según sea necesario */
 section p {
   font-size: 18px;
 }
 
-section img {
+.abanico {
+  display: flex;
+  width: 850px;
+  height: 430px;
+}
+
+.abanico img {
+ width: 0px;
+ flex-grow: 1;
+ object-fit: over;
+ opacity: .9;
+ transition: .5s ease;
+}
+
+.abanico img:hover {
+  width: 150px;
+  opacity: 1;
+  filter: contrast(120%)
+}
+
+.pfp {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -23,5 +41,13 @@ section button {
   height: 30px;
 }
 
+.goBackButton{
+  position: absolute;
+  bottom: 150px;
+  width: 100px;
+  height: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 

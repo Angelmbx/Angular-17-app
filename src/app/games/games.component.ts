@@ -14,24 +14,9 @@ import { Component, Input } from '@angular/core';
     }
     </ul>
     </div>
+    <img class="cat" *ngIf="isLoggedIn" src="https://media.tenor.com/a8a1J3g3bYkAAAAi/kawaii-cute.gif" alt="Gaming cat gif"/>
   `,
-  styles: `
- 
-
-  ul {
-    padding: 0;
-    margin: 0;
-    display: inline-block; 
-  }
-
-  li {
-    margin: 5px; 
-  }
-
-  span {
-    color:burlywood;
-  }
-`
+  styleUrl: './games.component.css'
 })
 export class GamesComponent {
   @Input() username = '';

@@ -1,0 +1,28 @@
+body {
+    position: relative;
+    min-height: 100vh; /* Para que ocupe toda la pantalla */
+    margin: 0;
+  }
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block; 
+}
+
+li {
+   margin: 5px; 
+}
+
+span {
+    color:burlywood;
+}
+
+
+.cat{
+    height: 100px;
+    position: absolute;
+    bottom: 10px; /* Ajusta este valor para determinar cuánto del borde inferior quieres dejar */
+    left: 50%;
+    transform: translateX(-50%); /* Para centrar horizontalmente */
+}

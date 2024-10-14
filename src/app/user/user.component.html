@@ -1,11 +1,23 @@
-<section>
+<section class="ax">
 @if (isLoggedIn) {
 <p>Bienvenido, {{ username }}</p>
-<img 
+<img class="pfp"
 (click)="greet()"
 alt="photo" 
 src="https://github.com/Angelmbx.png"/>
+<button class="goBackButton" *ngIf="isLoggedIn" (click)="isLoggedIn = false" >Volver</button>
+
 } @else {
+
+<section class="abanico">
+    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/Ah7Ar9MU0r1BBlzAUflmhyQP.png" alt="Howarts Legacy cover">
+    <img src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077PhantomLiberty_CDPROJEKTRED_DLC_S2_1200x1600-3acec02a8b11a2c50ba8dd3cb217f1c6" alt="Cyberpunk P.L. cover">
+    <img src="https://cdn1.epicgames.com/offer/046aeb7098b94ac3961dad6c5dbe68c0/EGS_RatchetClankRiftApart_InsomniacGames_S2_1200x1600-52110dae5ab01644738dac07ac1ea796" alt="Ratchet and Clank cover">
+    <img src="https://i.pinimg.com/originals/a4/de/60/a4de606d12b88f3e83f7a990e1a8069e.png" alt="Horizon Forbbiden West cover">
+    <img src="https://d1bzs82igjv2qp.cloudfront.net/products/gran-turismo-7-standard-edition-italy-playstation-4-updated-1.jpg" alt="Gran Turismo 7 cover">
+
+</section>
+
 <p>Inicia sesión</p>
 <button (click)="isLoggedIn = true" >Log In</button>
 }
